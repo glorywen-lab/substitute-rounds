@@ -45,7 +45,6 @@
       border: 1px solid var(--border);
       overflow: hidden;
     }
-    /* Header (使用 h2 遵守無障礙規範) */
     .header {
       background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
       color: #FFFFFF;
@@ -85,7 +84,6 @@
       letter-spacing: 0.3px;
       box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
     }
-    /* Priority Focus Card */
     .hero-card {
       background: var(--accent-light);
       border: 1.5px solid #10B981;
@@ -126,7 +124,6 @@
       border: 1px solid #A7F3D0;
       font-weight: 600;
     }
-    /* Table */
     .table-wrapper {
       overflow-x: auto;
       padding: 0 20px 10px 20px;
@@ -178,7 +175,6 @@
       color: var(--text-muted);
       font-weight: normal;
     }
-    /* Badges */
     .rank-badge {
       display: inline-block;
       width: 26px;
@@ -218,7 +214,6 @@
       color: #475569;
     }
 
-    /* Detail Accordion Button Design */
     .detail-accordion {
       display: inline-block;
       width: 100%;
@@ -282,7 +277,6 @@
       white-space: nowrap;
     }
 
-    /* Rules Card */
     .rules-card {
       background: #F8FAFC;
       border-top: 1px solid var(--border);
@@ -319,7 +313,6 @@
       border-radius: 50%;
       background: #3B82F6;
     }
-    /* Footer */
     .footer {
       background: #FFFFFF;
       border-top: 1px solid var(--border);
@@ -374,7 +367,6 @@
 <body>
 
 <div class="container">
-  <!-- Header (使用 h2 標題遵守無障礙規範) -->
   <div class="header">
     <div class="header-title-box">
       <span class="header-icon">🏫</span>
@@ -386,16 +378,14 @@
     <div class="header-badge">第 3 輪進行中</div>
   </div>
 
-  <!-- Priority Focus Card -->
   <div class="hero-card">
     <div class="hero-left">
       <span class="hero-tag">🎯</span>
       <span class="hero-title">下一位優先代導：<span class="hero-name">高老師</span></span>
     </div>
-    <div class="hero-right">累計 6 小時</div>
+    <div class="hero-right">累計 5 小時</div>
   </div>
 
-  <!-- Table -->
   <div class="table-wrapper">
     <table>
       <thead>
@@ -412,7 +402,7 @@
         <tr class="highlight-uncompleted">
           <td class="text-center"><span class="rank-badge rank-1">1</span></td>
           <td class="teacher-name"><strong>高老師</strong></td>
-          <td class="text-center font-weight-bold text-primary">6 <span class="unit">小時</span></td>
+          <td class="text-center font-weight-bold text-primary">5 <span class="unit">小時</span></td>
           <td class="text-center"><span class="badge badge-danger">第 2 輪未輪 (優先)</span></td>
           <td>
             <details class="detail-accordion">
@@ -421,34 +411,14 @@
                 <span class="arrow-icon">▼</span>
               </summary>
               <div class="detail-content">
-                <span class="round-pill">第1輪: <b>6 小時</b></span>
+                <span class="round-pill">第1輪: <b>5 小時</b></span>
               </div>
             </details>
           </td>
         </tr>
-        
 
         <tr class="highlight-uncompleted">
           <td class="text-center"><span class="rank-badge rank-2">2</span></td>
-          <td class="teacher-name"><strong>邱老師</strong></td>
-          <td class="text-center font-weight-bold text-primary">8 <span class="unit">小時</span></td>
-          <td class="text-center"><span class="badge badge-danger">第 2 輪未輪 (優先)</span></td>
-          <td>
-            <details class="detail-accordion">
-              <summary class="detail-btn">
-                <span>🔍 查看明細 (1 輪)</span>
-                <span class="arrow-icon">▼</span>
-              </summary>
-              <div class="detail-content">
-                <span class="round-pill">第1輪: <b>8 小時</b></span>
-              </div>
-            </details>
-          </td>
-        </tr>
-        
-
-        <tr class="highlight-uncompleted">
-          <td class="text-center"><span class="rank-badge rank-3">3</span></td>
           <td class="teacher-name"><strong>施老師</strong></td>
           <td class="text-center font-weight-bold text-primary">12 <span class="unit">小時</span></td>
           <td class="text-center"><span class="badge badge-danger">第 2 輪未輪 (優先)</span></td>
@@ -464,10 +434,9 @@
             </details>
           </td>
         </tr>
-        
 
         <tr class="">
-          <td class="text-center"><span class="rank-badge rank-normal">4</span></td>
+          <td class="text-center"><span class="rank-badge rank-3">3</span></td>
           <td class="teacher-name"><strong>陳老師</strong></td>
           <td class="text-center font-weight-bold text-primary">9 <span class="unit">小時</span></td>
           <td class="text-center"><span class="badge badge-primary">已完成第 2 輪</span></td>
@@ -483,10 +452,9 @@
             </details>
           </td>
         </tr>
-        
 
         <tr class="">
-          <td class="text-center"><span class="rank-badge rank-normal">5</span></td>
+          <td class="text-center"><span class="rank-badge rank-normal">4</span></td>
           <td class="teacher-name"><strong>李老師</strong></td>
           <td class="text-center font-weight-bold text-primary">12 <span class="unit">小時</span></td>
           <td class="text-center"><span class="badge badge-primary">已完成第 2 輪</span></td>
@@ -502,12 +470,29 @@
             </details>
           </td>
         </tr>
-        
+
+        <tr class="">
+          <td class="text-center"><span class="rank-badge rank-normal">5</span></td>
+          <td class="teacher-name"><strong>邱老師</strong></td>
+          <td class="text-center font-weight-bold text-primary">13 <span class="unit">小時</span></td>
+          <td class="text-center"><span class="badge badge-primary">已完成第 2 輪</span></td>
+          <td>
+            <details class="detail-accordion">
+              <summary class="detail-btn">
+                <span>🔍 查看明細 (2 輪)</span>
+                <span class="arrow-icon">▼</span>
+              </summary>
+              <div class="detail-content">
+                <span class="round-pill">第1輪: <b>5 小時</b></span><span class="round-pill">第2輪: <b>8 小時</b></span>
+              </div>
+            </details>
+          </td>
+        </tr>
 
         <tr class="highlight-completed">
           <td class="text-center"><span class="rank-badge rank-normal">6</span></td>
           <td class="teacher-name"><strong>曾老師</strong></td>
-          <td class="text-center font-weight-bold text-primary">15 <span class="unit">小時</span></td>
+          <td class="text-center font-weight-bold text-primary">14 <span class="unit">小時</span></td>
           <td class="text-center"><span class="badge badge-success">第 3 輪已完成</span></td>
           <td>
             <details class="detail-accordion">
@@ -516,17 +501,15 @@
                 <span class="arrow-icon">▼</span>
               </summary>
               <div class="detail-content">
-                <span class="round-pill">第1輪: <b>5 小時</b></span><span class="round-pill">第2輪: <b>4 小時</b></span><span class="round-pill">第3輪: <b>6 小時</b></span>
+                <span class="round-pill">第1輪: <b>5 小時</b></span><span class="round-pill">第2輪: <b>4 小時</b></span><span class="round-pill">第3輪: <b>5 小時</b></span>
               </div>
             </details>
           </td>
         </tr>
-        
       </tbody>
     </table>
   </div>
 
-  <!-- Rules -->
   <div class="rules-card">
     <div class="rules-title">
       <span>📌</span> 代導安排排程原則
@@ -538,9 +521,8 @@
     </ul>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
-    <div>更新日期：2026年09月21日</div>
+    <div>更新日期：2026年09月23日</div>
   </div>
 </div>
 
